@@ -1,0 +1,39 @@
+<div class="my-36 mx-auto">
+    <div class="bg-gray-400 rounded-lg p-4 w-fit mx-auto">
+        <div class="flex bg-white">
+            <div>
+                <img src="../../assets/otp.jpg" alt="" class="w-[500px]
+                    h-[450px] object-fill">
+            </div>
+            <div class="m-4 flex flex-col gap-5 mx-7 ">
+                <div class="flex flex-col items-end lg:mt-6
+                    text-[#bb321f]">
+                    <h1 class="font-bold text-xl">OTP</h1>
+                    <p class="text-center">Online Banking</p>
+                </div>
+                <div class="flex flex-col gap-3">
+                    <h1 class="font-semibold text-2xl">Verify your identity</h1>
+                    <p class="text-[14px] ">We've just sent a
+                        text
+                        message with your security<br>
+                        code on
+                        the number +977-98*****211
+
+                        <!-- OTP CODE IS 9840 -->
+                    </p>
+                    <p class="text-[14px]">Please enter the code in order to
+                        continue. </p>
+                    <div class="otp-input border-black">
+                        <input [(ngModel)]="otp" type="text" maxlength="4"
+                            minlength="4"
+                            class="border-black border-2 px-2 w-fit">
+                    </div>
+                    <button (click)="verify()" class="w-fit items-center
+                        bg-black
+                        px-2 py-1
+                        text-white">Verify</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
