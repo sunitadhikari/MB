@@ -1,7 +1,7 @@
 import { Router } from '@angular/router';
 import { FormsModule } from '@angular/forms';
 import { Component, ElementRef, ViewChild } from '@angular/core';
-import * as alertify from 'alertifyjs';
+// import * as alertify from 'alertifyjs';
 
 @Component({
   selector: 'app-verify-otp',

@@ -1,10 +1,71 @@
-<div class="my-20 mx-auto">
-    <div class="bg-[#cbadc2] rounded-md p-3 w-fit mx-auto">
-        <div class="m-5">
-            <div class="flex justify-between">
-                <div class="flex flex-col">
-                    <span class="font-medium text-xl">Suan</span>
-                    <div class="flex-gap-2 items-center"></div>
+<div class="my-20 mx-8 h-full">
+    <div class="bg-[#a9a2a7] rounded-lg p-3 ">
+        <div class=" bg-white rounded-md h-full">
+            <div class="flex h-full rounded-md">
+                <div class="flex flex-col px-4 py-3 bg-gray-100 ">
+                    <span class="font-bold text-2xl text-[#c04444]">SBI Bank</span>
+                    <div class="flex flex-col gap-2 pt-10 text-sm font-medium
+                        ">
+                        <div class="flex gap-2">
+                            <mat-icon>home</mat-icon>
+                            <span class=" text-gray-500"
+                                (click)="showSection('dashboard')">Dashboard</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <mat-icon>transfer</mat-icon>
+                            <span class=" text-gray-500"
+                                (click)="showSection('transfer')">Transfer</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <mat-icon>home</mat-icon>
+                            <span class=" text-gray-500"
+                                (click)="showSection('transaction')">Transactions</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <mat-icon>home</mat-icon>
+                            <span class=" text-gray-500"
+                                (click)="showSection('accounts and cards')">Accounts
+                                and
+                                Cards</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <mat-icon>home</mat-icon>
+                            <span class=" text-gray-500"
+                                (click)="showSection('investment')">Investment</span>
+                        </div>
+                    </div>
+                    <div class="flex flex-col pt-24 text-base font-medium">
+                        <div class="flex gap-2">
+                            <mat-icon>setting</mat-icon>
+                            <span class=" text-gray-500"
+                                (click)="showSection('settings')">Setting</span>
+                        </div>
+                        <div class="flex gap-2">
+                            <mat-icon>signout</mat-icon>
+                            <a class=" text-gray-500" (click)="logout()">Log Out</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="b mx-5 my-5">
+                    <div *ngIf="selectSection=='dashboard'">
+                        <app-dashboard></app-dashboard>
+                    </div>
+                    <div *ngIf="selectSection=='transfer'">
+                        <app-transfer></app-transfer>
+                    </div>
+                    <div *ngIf="selectSection=='transaction'">
+                        <app-transaction></app-transaction>
+                    </div>
+                    <div *ngIf="selectSection=='account/card'">
+                        <app-account></app-account>
+                    </div>
+                    <div *ngIf="selectSection=='investment'">
+                        <app-investment></app-investment>
+                    </div>
+                    <div *ngIf="selectSection=='settings'">
+                        <app-setting></app-setting>
+                    </div>
                 </div>
             </div>
         </div>
