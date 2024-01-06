@@ -35,6 +35,6 @@ export class HomeComponent implements OnInit {
     this.route.navigate(['login']);
   }
   ngOnInit(): void {
-    this.selectSection = 'transaction';
+    this.selectSection = 'settings';
   }
 }

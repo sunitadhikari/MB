@@ -1,15 +1,16 @@
 <div class="px-5 h-full w-full py-5 flex ">
     <div class="flex flex-col gap-7">
         <span class="font-semibold text-xl">Transactions overview</span>
-        <select name="account" id="" class="bg-black px-2 py-1 text-white">
+        <select name="account" id="" class="bg-black px-2 py-1 text-white
+            w-fit">
             <option value="account1">Checking Account</option>
             <option value="account"> Option 2</option>
             <option value="account2">Option3</option>
             <option value="account3">Option3</option>
         </select>
-        <div class="flex justify-between w-full">
+        <div class="flex justify-between w-full gap-8">
             <div class="flex flex-col">
-                <div class="flex gap-5">
+                <div class="flex gap-8">
                     <div class="flex gap-5 bg-black">
                         <div class="flex flex-col text-white text-base
                             font-medium
@@ -46,24 +47,79 @@
                                         font-medium">Expenses</span>
                                     <span class="text-white font-medium
                                         text-lg">USD
-                                        30,000.00</span>
+                                        20,000.00</span>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="flex flex-col bg-orange-300 pt-10 px-4">
+                    <div class="flex flex-col bg-orange-300 pt-20 px-4 w-48
+                        rounded-md">
                         <div class="gap-2 flex flex-col">
-                            <div class="text-xs fontthin">Available Balance</div>
-                            <span>USD 10,000.00</span>
+                            <div class="text-base font-normal">Available Balance</div>
+                            <span class="text-lg font-medium">USD 10,000.00</span>
                         </div>
-                        <div class="gap-4 flex flex-col">
-                            <div class="text-xs fontthin">1111**** ****00000</div>
-                            <span>UNicoal Rich</span>
+                        <div class="gap-2 flex flex-col pt-14">
+                            <div class="text-base font-medium">1111****
+                                ****00000</div>
+                            <div class="flex justify-between text-sm
+                                font-mdeium">
+                                <span>Unicoal Rich</span>
+                                <span>12/24</span>
+                            </div>
                         </div>
                     </div>
+                </div>
+                <div class="flex justify-between py-5">
+                    <span class="text-lg font-medium">Spending overview</span>
+                    <div class="flex gap-1 px-3">
+                        <mat-icon>arrow-left</mat-icon>
+                        <mat-icon>arrow-right</mat-icon>
+                    </div>
+                </div>
+                <div class="bg-gray-200 h-64 px-3 py-4">
+                    <div class="flex justify-between">
+                        <span class="font-medium text-lg">Statistics</span>
+                        <select name="weekly" id="" class="px-2 py-1 text-sm
+                            font-normal border-black bg-gray-200 border-[1px]">
+                            <option value="weekly">Weekly</option>
+                            <option value="monthly">Monthly</option>
+                            <option value="yearly">Yearly</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="bg-purple-300 my-5 px-3 py-4 h-64">
+                    <div class="flex justify-between">
+                        <span class="font-medium text-lg">Top Categories</span>
+                        <select name="days" id="" class="px-2 py-1 text-sm
+                            font-normal border-black bg-purple-300
+                            border-[1px]">
+                            <option value="last-20-days">Last 20 days</option>
+                            <option value="last-10-days">Last 10 days</option>
+                            <option value="last-7-days">Last 7 days</option>
+                            <option value="last-30-days">Last 30 days</option>
+                            <option value="last-60-days">Last 60 days</option>
+                        </select>
+                    </div>
+                    <span class="text-base font-light">1/1-31/1 2023</span>
+                </div>
+            </div>
+            <div class="flex flex-col w-full gap-4">
+                <div class="flex justify-between">
+                    <span class="text-lg font-medium">Transactions</span>
+                    <mat-icon>filter</mat-icon>
+                </div>
+                <div class="w-full flex">
+                    <input type="text" placeholder="search " class="px-2 py-1
+                        border-gray-300 border-[1px] w-[90%]">
+                    <div class=" h-full bg-gray-400 w-[10%]">
+                        <mat-icon class=" bg-gray-400 px-2 py-1">search</mat-icon>
+                    </div>
+                </div>
+                <div class="flex gap-2 text-base font-medium">
+                    <span>All</span>
+                    <span>Expenses</span>
+                    <span>Income</span>
 
                 </div>
             </div>
         </div>
-
-    </div>

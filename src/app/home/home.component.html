@@ -1,9 +1,10 @@
-<div class=" w-full">
-    <div class=" bg-white rounded-md l ">
-        <div class="flex rounded-md ">
-            <div class="flex flex-col px-6 py-4 bg-gray-100
-                justify-between ">
-                <div class="flex flex-col gap-5 py-3 text-lg font-semibold
+
+<div class="h-screen flex ">
+    <div class=" bg-white rounded-md ">
+        <div class="flex rounded-md h-full ">
+            <div class="flex flex-col px-6 pt-4 bg-gray-100 justify-between
+                h-full">
+                <div class="flex flex-col gap-5 px-4 py-3 text-lg font-semibold
                     ">
                     <span class="font-bold text-3xl text-[#c04444] ">SBI
                         Bank</span>
@@ -35,9 +36,9 @@
                             (click)="showSection('investment')">Investment</span>
                     </div>
                 </div>
-                <div class="flex flex-col text-lg font-semibold
-                    mt-[520px] ">
-                    <div class="flex gap-2">
+                <div class="flex flex-col text-lg font-semibold px-4 h-fit
+                    ">
+                    <div class="flex gap-3">
                         <mat-icon>setting</mat-icon>
                         <span class=" text-gray-500"
                             (click)="showSection('settings')">Setting</span>
@@ -48,26 +49,27 @@
                     </div>
                 </div>
             </div>
-
-            <div class="b mx-5 my-5">
-                <div *ngIf="selectSection=='dashboard'">
-                    <app-dashboard></app-dashboard>
-                </div>
-                <div *ngIf="selectSection=='transfer'">
-                    <app-transfer></app-transfer>
-                </div>
-                <div *ngIf="selectSection=='transaction'">
-                    <app-transaction></app-transaction>
-                </div>
-                <div *ngIf="selectSection=='account/card'">
-                    <app-account></app-account>
-                </div>
-                <div *ngIf="selectSection=='investment'">
-                    <app-investment></app-investment>
-                </div>
-                <div *ngIf="selectSection=='settings'">
-                    <app-setting></app-setting>
-                </div>
+        </div>
+    </div>
+    <div class="flex-1">
+        <div class="b mx-5 my-5 w-full ">
+            <div *ngIf="selectSection=='dashboard'">
+                <app-dashboard></app-dashboard>
+            </div>
+            <div *ngIf="selectSection=='transfer'">
+                <app-transfer></app-transfer>
+            </div>
+            <div *ngIf="selectSection=='transaction'">
+                <app-transaction></app-transaction>
+            </div>
+            <div *ngIf="selectSection=='account/card'">
+                <app-account></app-account>
+            </div>
+            <div *ngIf="selectSection=='investment'">
+                <app-investment></app-investment>
+            </div>
+            <div *ngIf="selectSection=='settings'">
+                <app-setting></app-setting>
             </div>
         </div>
     </div>
