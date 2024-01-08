@@ -1,12 +1,11 @@
+import { MatIconModule } from '@angular/material/icon';
 import { Component } from '@angular/core';
 
 @Component({
   selector: 'app-investment',
   standalone: true,
-  imports: [],
+  imports: [MatIconModule],
   templateUrl: './investment.component.html',
-  styleUrl: './investment.component.css'
+  styleUrl: './investment.component.css',
 })
-export class InvestmentComponent {
-
-}
+export class InvestmentComponent {}

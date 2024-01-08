@@ -26,7 +26,7 @@
                     <div class="flex gap-2">
                         <mat-icon>home</mat-icon>
                         <span class=" text-gray-500"
-                            (click)="showSection('accounts and cards')">Accounts
+                            (click)="showSection('account')">Accounts
                             and
                             Cards</span>
                     </div>
@@ -52,7 +52,7 @@
         </div>
     </div>
     <div class="flex-1">
-        <div class="b mx-5 my-5 w-full ">
+        <div class="b px-5 my-5 w-full ">
             <div *ngIf="selectSection=='dashboard'">
                 <app-dashboard></app-dashboard>
             </div>
@@ -62,7 +62,7 @@
             <div *ngIf="selectSection=='transaction'">
                 <app-transaction></app-transaction>
             </div>
-            <div *ngIf="selectSection=='account/card'">
+            <div *ngIf="selectSection=='account'">
                 <app-account></app-account>
             </div>
             <div *ngIf="selectSection=='investment'">
@@ -73,5 +73,6 @@
             </div>
         </div>
     </div>
+
 
 </div>
