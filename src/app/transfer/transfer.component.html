@@ -1,130 +1,137 @@
-<div class=" flex justify-between min-w-fit">
-
-    <span class="text-base font-semibold ">Transfer</span>
-    <div class="flex gap-1 items-center">
-        <mat-icon>notification</mat-icon>
-        <img src="../../assets/circle2.png" alt="" class="h-5 w-5 rounded-full">
-        <span class="text-gray-500 font-medium text-[12px]">Sunita Adhikari</span>
+<div class="mx-3 my-5 max-w-full overflow-hidden">
+    <div class="flex justify-between">
+        <span class="text-2xl font-medium text-gray-600">Transfer</span>
+        <div class="flex gap-2">
+            <mat-icon>notification</mat-icon>
+            <img src="../../assets/circle2.png" alt="image" class="rounded-full
+                h-7 w-7">
+            <span class="text-sm font-medium text-center justify-center
+                items-center
+                "> John Doe</span>
+        </div>
     </div>
-</div>
-<div class="flex gap-5 justify-between ">
+    <div class="flex justify-between w-full py-6">
+        <div class="pt-3 flex flex-col w-[45%] justify-between">
+            <div class="flex flex-col ">
+                <div class="flex flex-col gap-4 text-white">
+                    <span class="text-lg font-medium text-gray-500 mt-2">Select
+                        payer</span>
+                    <select name="account" id="account" class="bg-black px-2
+                        py-1
+                        text-base font-medium ">
+                        <option value="Checking Account" class="
+                            ">Checking Account</option>
+                        <option value="Sunita Ashikari">Sunita </option>
+                        <option value="Anish Pokharel">Anish</option>
+                        <option value="Sangita Adhikari">Sangita</option>
+                    </select>
+                    <div class="flex flex-col gap-4 sm:gap-7 bg-black px-4 py-5
+                        text-sm font-medium">
+                        <span class="text-base">Checking Account</span>
+                        <div class="flex gap-1 flex-col">
 
-
-    <div class="pt-3 flex flex-col">
-
-        <div class="flex flex-col gap-4 text-white">
-            <span class="text-sm font-bold text-gray-500 mt-2">Select
-                payer</span>
-            <select name="account" id="account" class="bg-black px-2 py-1
-                text-xs font-medium ">
-                <option value="Checking Account">Checking Account</option>
-                <option value="Sunita Ashikari">Sunita </option>
-                <option value="Anish Pokharel">Anish</option>
-                <option value="Sangita Adhikari">Sangita</option>
-            </select>
-            <div class="flex flex-col gap-4 bg-black px-4 py-2
-                text-xs font-medium">
-                <span>Checking Account</span>
-                <div class="flex gap-1 flex-col">
-
-                    <span>Balance</span>
-                    <span class="text-green-200 font-semibold text-lg">USD
-                        10,000.00</span>
+                            <span class="text-base">Balance</span>
+                            <span class="text-green-200 font-bold text-2xl">USD
+                                10,000.00</span>
+                        </div>
+                        <hr class="h-px bg-gray-400 dark:bg-gray-600 w-56">
+                        <div class="flex flex-col gap-1">
+                            <span>IBAN</span>
+                            <span class="text-lg">20124 000 20304 33444 </span>
+                        </div>
+                        <div class="flex flex-col gap-1 ">
+                            <span class="text-base">Account Owner</span>
+                            <span class="font-semibold text-xl">Sunita Adhikari
+                            </span>
+                        </div>
+                    </div>
                 </div>
-                <hr class="h-px bg-gray-400 dark:bg-gray-600 w-56">
-                <div class="flex flex-col gap-1">
-                    <span>IBAN</span>
-                    <span>20124 000 20304 33444 </span>
+                <div class="flex gap-2 bg-purple-300 justify-center text-base
+                    font-medium place-items-center py-2">
+                    <mat-icon>share</mat-icon>
+                    <span>Share IBAN</span>
                 </div>
-                <div class="flex flex-col gap-1 ">
-                    <span>Account Owner</span>
-                    <span class="">Sunita Adhikari </span>
+                <div class="flex gap-2 bg-orange-200 justify-center text-base
+                    font-medium
+                    place-items-center py-2
+                    ">
+                    <mat-icon>request</mat-icon>
+                    <span>Request payment</span>
                 </div>
             </div>
+            <div class="bg-gray-200 mt-7 pt-3 pb-5 ">
+                <div class="flex justify-between text-base font-medium px-4
+                    py-2">
+                    <span>Saved Beneficiaries</span>
+                    <button class="text-xs font-normal">View all </button>
+                </div>
+                <div class="flex gap-3
+                    text-sm font-medium mb-3
+                    my-2 py-5 px-3 justify-between ">
+                    <!-- <input type="file" class="bg-black"> -->
+                    <div class="flex flex-col w-10 h-10 rounded-full gap-1
+                        text-center">
+                        <img src="../../assets/circle.png" alt="">
+                        <p>Ram</p>
+                    </div>
+                    <div class="flex flex-col w-10 h-10 rounded-full gap-1
+                        text-center">
+                        <img src="../../assets/circle2.png" alt="">
+
+                        <p>Sunita</p>
+                    </div>
+                    <div class="flex flex-col w-10 h-10 rounded-full gap-1
+                        text-center">
+                        <img src="../../assets/circle3.jpg" alt="">
+                        <p>Anish</p>
+                    </div>
+                    <div class="flex flex-col w-10 h-10 rounded-full gap-1
+                        text-center">
+                        <img
+                            src="../../assets/circle2.png" alt="">
+                        <p>Ansu</p>
+                    </div>
+
+
+                </div>
+            </div>
+
         </div>
-        <div class="flex gap-2 bg-purple-300 justify-center text-xs
-            font-medium place-items-center py-1">
-            <mat-icon>share</mat-icon>
-            <span>Share IBAN</span>
-        </div>
-        <div class="flex gap-2 bg-orange-200 justify-center text-xs
-            font-medium
-            place-items-center py-1
-            ">
-            <mat-icon>request</mat-icon>
-            <span>Request payment</span>
-        </div>
-
-        <div class="bg-gray-200 mt-4 ">
-            <div class="flex justify-between text-sm font-medium px-4 py-2">
-                <span>Saved Beneficiaries</span>
-                <button class="text-xs font-normal">View all </button>
-            </div>
-            <div class="flex gap-3
-                text-xs font-thin mb-3
-                my-2 py-3 px-3 justify-between ">
-                <!-- <input type="file" class="bg-black"> -->
-                <div class="flex flex-col w-10 h-10 rounded-full
-                    text-center">
-                    <img src="../../assets/circle.png" alt="">
-                    <p>Ram</p>
+        <div class="pt-3 flex flex-col w-[50%]">
+            <div class="flex flex-col gap-5 text-gray-500 text-xs
+                font-medium">
+                <span class="text-xl font-medium mt-2">Transfer to</span>
+                <div class="flex gap-5 text-sm">
+                    <span>Own account</span>
+                    <span>Other account</span>
                 </div>
-                <div class="flex flex-col w-10 h-10 rounded-full
-                    text-center">
-                    <img src="../../assets/circle2.png" alt="">
-
-                    <p>Sunita</p>
+                <span class="text-lg font-medium ">
+                    Beneficary
+                </span>
+                <input type="text" placeholder="IBAN*" class="px-2 py-2
+                    border-[2px] w-full">
+                <input type="text" placeholder="Amount*" class="px-2 py-2
+                    border-[2px] w-full">
+                <input type="date" placeholder="Date*" class="px-2 py-2
+                    border-[2px] w-full">
+                <span class="text-gray-600 font-semibold text-lg">Other data</span>
+                <div class="flex w-full gap-10">
+                    <input type="text" placeholder="Transfer Purpose"
+                        class=" border-[2px] px-2 py-2 w-[50%]">
+                    <input type="text" placeholder="Beneficary name" class="
+                        border-[2px] px-2 py-2 w-[50%]">
                 </div>
-                <div class="flex flex-col w-10 h-10 rounded-full
-                    text-center">
-                    <img src="../../assets/circle3.jpg" alt="">
-                    <p>Anish</p>
+                <div class="flex justify-between gap-10">
+                    <input type="text" placeholder="Beneficiary email" class="
+                        border-[2px] px-2 py-2 w-[50%]">
+                    <input type="text" placeholder="Payer's reference" class="
+                        border-[2px] px-2 py-2 w-[50%]">
                 </div>
-                <div class="flex flex-col w-10 h-10 rounded-full
-                    text-center">
-                    <img
-                        src="../../assets/circle2.png" alt="">
-                    <p>Ansu</p>
-                </div>
-
-
+                <input type="text" placeholder="Information for beneficiary"
+                    class=" border-[2px] px-2 py-2 w-full">
+                <button class="bg-black text-white text-cneter text-base
+                    font-medium py-2">Continue</button>
             </div>
-        </div>
-
-    </div>
-    <div class="pt-3 flex flex-col ">
-        <div class="flex flex-col gap-5 text-gray-500 text-xs
-            font-medium">
-            <span class="text-sm font-bold mt-2">Transfer to</span>
-            <div class="flex gap-5 ">
-                <span>Own account</span>
-                <span>Other account</span>
-            </div>
-            <span class="text-sm font-semibold ">
-                Beneficary
-            </span>
-            <input type="text" placeholder="IBAN*" class="px-2 py-1
-                border-[2px] w-full">
-            <input type="text" placeholder="Amount*" class="px-2 py-1
-                border-[2px] w-full">
-            <input type="date" placeholder="Date*" class="px-2 py-1
-                border-[2px] w-full">
-            <span class="text-gray-600 font-semibold">Other data</span>
-            <div class="flex w-full gap-10">
-                <input type="text" placeholder="Transfer Purpose"
-                    class=" border-[2px] px-2 py-1 w-[50%]">
-                <input type="text" placeholder="Beneficary name" class="
-                    border-[2px] px-2 py-1 w-[50%]">
-            </div>
-            <div class="flex justify-between gap-10">
-                <input type="text" placeholder="Beneficiary email" class="
-                    border-[2px] px-2 py-1 w-[50%]">
-                <input type="text" placeholder="Payer's reference" class="
-                    border-[2px] px-2 py-1 w-[50%]">
-            </div>
-            <input type="text" placeholder="Information for beneficiary"
-                class=" border-[2px] px-2 py-1 w-full">
-            <button class="bg-black text-white text-cneter py-2">Continue</button>
         </div>
     </div>
 </div>
